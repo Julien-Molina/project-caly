@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form
+      action="https://www.paypal.com/cgi-bin/webscr"
+      method="post"
+      target="_top"
+    >
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <table>
+        <tr>
+          <td><input type="hidden" name="on0" value="Nombre" />Nombre</td>
+        </tr>
+        <tr>
+          <td>
+            <select name="os0">
+              <option value="3">3 €5,00 EUR</option>
+              <option value="5">5 €8,00 EUR</option>
+              <option value="10">10 €15,00 EUR</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="hidden" name="on1" value="Couleur" />Couleur</td>
+        </tr>
+        <tr>
+          <td>
+            <select name="os1">
+              <option value="Vert">Vert</option>
+              <option value="Rouge">Rouge</option>
+              <option value="Gris">Gris</option>
+              <option value="Blanc">Blanc</option>
+              <option value="Noir">Noir</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <input
+        type="hidden"
+        name="encrypted"
+        value="-----BEGIN PKCS7-----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-----END PKCS7-----"
+      />
+      <input
+        type="image"
+        src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_buynow_LG.gif"
+        border="0"
+        name="submit"
+        alt="PayPal, le réflexe sécurité pour payer en ligne"
+      />
+      <img
+        alt=""
+        border="0"
+        src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif"
+        width="1"
+        height="1"
+      />
+    </form>
+  </body>
+</html>
